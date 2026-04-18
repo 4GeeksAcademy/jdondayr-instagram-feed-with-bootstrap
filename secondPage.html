@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Hojas de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title> Second page Instagram feed with Bootstrap</title>
+
+</head>
+
+<body>
+
+    <div class="container segunda-pagina">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </a>
+                <div>
+                    <button type="button" class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo">Create a new post</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Caption:</label>
+                                            <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+                                        </div>
+                                    </form>
+                                    <div>
+                                        <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                                        <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid d-flex flex-column gap-2 mt-5">
+            <div class="row gap-2">
+                <img class="col" src="imagenes/Que-es-paisaje.jpg" alt="paisaje">
+                <img class="col" src="imagenes/perro.webp" alt="perro">
+                <img class="col" src="imagenes/Platos-de-comida-que-pides-a-domicilio-y-puedes-hacer-en-casa-945x630.jpg" alt="comida">
+            </div>
+            <div class="row gap-2">
+                <img class="col" src="imagenes/arctic-monkeys.jpg.webp" alt="arctic monkeys">
+                <img class="col" src="imagenes/4ce7e281-6488-44b8-8350-720b24951804.jpg" alt="mi gato sam">
+                <img class="col" src="imagenes/b6166a07-2faf-44b4-824f-216c79632cf0.jpg" alt="yo y mi gato sam">
+            </div>
+            <div class="row gap-2">
+                <img class="col" src="imagenes/donostia-1-1.jpg" alt="donostia">
+                <img class="col" src="imagenes/IMG_9986.jpeg" alt="ramen hecho por mi">
+                <img class="col" src="imagenes/p-elpuerto.jpg" alt="el puerto de santa maría">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

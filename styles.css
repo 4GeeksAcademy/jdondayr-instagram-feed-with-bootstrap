@@ -1,0 +1,13 @@
+.primera-pagina img {
+    width: 945px;
+}
+
+.segunda-pagina img {
+    width: 400px;
+    height: 310px;
+    object-fit: cover;
+}
+
+.col {
+    padding: 0;
+}
