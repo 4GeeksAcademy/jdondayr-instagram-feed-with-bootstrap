@@ -9,6 +9,7 @@
     <!-- Hojas de estilos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 
@@ -18,7 +19,7 @@
 
 <body class="d-flex flex-column align-items-start">
 
-    <div class="container d-flex flex-column gap-4 primera-pagina">
+    <div class="container d-flex flex-column gap-4">
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -79,49 +80,89 @@
             </div>
         </nav>
 
-        <div class="container d-flex flex-column align-items-center w-75 mt-5">
-            <div class="container d-flex align-items-center justify-content-between border pt-2">
-                <h4>Paisaje de un lago</h4>
-                <p class="align-self-start">20/01</p>
+        <ul class="nav nav-tab mx-auto" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                        class="bi bi-grid-3x3"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                        class="bi bi-square-fill"></i></button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active primera-pagina" id="home-tab-pane" role="tabpanel"
+                aria-labelledby="home-tab" tabindex="0">
+                <div class="container d-flex flex-column align-items-center w-75 mb-3">
+                    <div class="container d-flex align-items-center justify-content-between border pt-2">
+                        <h4>Paisaje de un lago</h4>
+                        <p class="align-self-start">20/01</p>
+                    </div>
+                    <img src="imagenes/Que-es-paisaje.jpg" alt="paisaje">
+                    <div class="container d-flex flex-column align-items-start border pt-2">
+                        <p><strong>240 Likes</strong></p>
+                        <p>Una foto de un lago en algún país del norte de Europa que ahora mismo no recuerdo #lago
+                            #vacaciones
+                        </p>
+                    </div>
+                </div>
+                <div class="container d-flex flex-column align-items-center w-75 mb-3">
+                    <div class="container d-flex align-items-center justify-content-between border pt-2">
+                        <h4>Perro sospechando</h4>
+                        <p class="align-self-start">03/02</p>
+                    </div>
+                    <img src="imagenes/perro.webp" alt="perro">
+                    <div class="container d-flex flex-column align-items-start border pt-2">
+                        <p><strong>120 Likes</strong></p>
+                        <p>Perro que está claro que algo sospecha #perro #sospechando</p>
+                    </div>
+                </div>
+                <div class="container d-flex flex-column align-items-center w-75 mb-3">
+                    <div class="container d-flex align-items-center justify-content-between border pt-2">
+                        <h4>Pizza de pepperoni</h4>
+                        <p class="align-self-start">23/02</p>
+                    </div>
+                    <img src="imagenes/Platos-de-comida-que-pides-a-domicilio-y-puedes-hacer-en-casa-945x630.jpg"
+                        alt="pizza">
+                    <div class="container d-flex flex-column align-items-start border pt-2">
+                        <p><strong>999 Likes</strong></p>
+                        <p>Una pizza que me comí ayer #pizza #pepperoni</p>
+                    </div>
+                </div>
+                <div class="container d-flex flex-column align-items-center w-75 mb-3">
+                    <div class="container d-flex align-items-center justify-content-between border pt-2">
+                        <h4>Los Arctic Monkeys</h4>
+                        <p class="align-self-start">21/03</p>
+                    </div>
+                    <img src="imagenes/arctic-monkeys.jpg.webp" alt="arctic monkeys">
+                    <div class="container d-flex flex-column align-items-start border pt-2">
+                        <p><strong>340 Likes</strong></p>
+                        <p>Uno de mis grupos favoritos #arctic #monkeys #sheffield #music</p>
+                    </div>
+                </div>
             </div>
-            <img src="imagenes/Que-es-paisaje.jpg" alt="paisaje">
-            <div class="container d-flex flex-column align-items-start border pt-2">
-                <p><strong>240 Likes</strong></p>
-                <p>Una foto de un lago en algún país del norte de Europa que ahora mismo no recuerdo #lago #vacaciones
-                </p>
-            </div>
-        </div>
-        <div class="container d-flex flex-column align-items-center w-75">
-            <div class="container d-flex align-items-center justify-content-between border pt-2">
-                <h4>Perro sospechando</h4>
-                <p class="align-self-start">03/02</p>
-            </div>
-            <img src="imagenes/perro.webp" alt="perro">
-            <div class="container d-flex flex-column align-items-start border pt-2">
-                <p><strong>120 Likes</strong></p>
-                <p>Perro que está claro que algo sospecha #perro #sospechando</p>
-            </div>
-        </div>
-        <div class="container d-flex flex-column align-items-center w-75">
-            <div class="container d-flex align-items-center justify-content-between border pt-2">
-                <h4>Pizza de pepperoni</h4>
-                <p class="align-self-start">23/02</p>
-            </div>
-            <img src="imagenes/Platos-de-comida-que-pides-a-domicilio-y-puedes-hacer-en-casa-945x630.jpg" alt="pizza">
-            <div class="container d-flex flex-column align-items-start border pt-2">
-                <p><strong>999 Likes</strong></p>
-                <p>Una pizza que me comí ayer #pizza #pepperoni</p>
-            </div>
-        </div>
-        <div class="container d-flex flex-column align-items-center w-75">
-            <div class="container d-flex align-items-center justify-content-between border pt-2">
-                <h4>Los Arctic Monkeys</h4>
-                <p class="align-self-start">21/03</p>
-            </div>
-            <img src="imagenes/arctic-monkeys.jpg.webp" alt="arctic monkeys">
-            <div class="container d-flex flex-column align-items-start border pt-2">
-                <p><strong>340 Likes</strong></p>
-                <p>Uno de mis grupos favoritos #arctic #monkeys #sheffield #music</p>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="container-fluid d-flex flex-column gap-2 mt-5 segunda-pagina">
+                    <div class="row gap-2">
+                        <img class="col" src="imagenes/Que-es-paisaje.jpg" alt="paisaje">
+                        <img class="col" src="imagenes/perro.webp" alt="perro">
+                        <img class="col"
+                            src="imagenes/Platos-de-comida-que-pides-a-domicilio-y-puedes-hacer-en-casa-945x630.jpg"
+                            alt="comida">
+                    </div>
+                    <div class="row gap-2">
+                        <img class="col" src="imagenes/arctic-monkeys.jpg.webp" alt="arctic monkeys">
+                        <img class="col" src="imagenes/4ce7e281-6488-44b8-8350-720b24951804.jpg" alt="mi gato sam">
+                        <img class="col" src="imagenes/b6166a07-2faf-44b4-824f-216c79632cf0.jpg" alt="yo y mi gato sam">
+                    </div>
+                    <div class="row gap-2">
+                        <img class="col" src="imagenes/donostia-1-1.jpg" alt="donostia">
+                        <img class="col" src="imagenes/IMG_9986.jpeg" alt="ramen hecho por mi">
+                        <img class="col" src="imagenes/p-elpuerto.jpg" alt="el puerto de santa maría">
+                    </div>
+                </div>
             </div>
         </div>
 
